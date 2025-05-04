@@ -60,6 +60,12 @@ export default function Home() {
    return ( 
    <div className="min-h-screen flex items-center justify-center bg-pink-100"> 
       <h1 className="text-4xl font-bold text-red-500">Hello !</h1> 
+      <button onClick={() => window.open('/birthday/index.html', '_blank')}
+  className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-2xl shadow-md transition duration-300 text-lg"
+>
+  🎉 Open Birthday Surprise
+</button>
    </div> 
+
    ); 
    }
