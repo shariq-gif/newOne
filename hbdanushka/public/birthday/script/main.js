@@ -18,6 +18,11 @@ window.addEventListener('load', () => {
     });
 });
 
+  document.getElementById('skipButton').addEventListener('click', function () {
+    window.location.href = '/grid';
+  });
+
+
 
 // animation timeline
 const animationTimeline = () => {

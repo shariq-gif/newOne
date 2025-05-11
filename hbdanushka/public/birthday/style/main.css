@@ -10,6 +10,26 @@ html {
   .song {
     visibility: hidden;
   }
+  .skip-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff5f5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.skip-btn:hover {
+  background-color: #e04a4a;
+}
+
   
   .container {
     height: 100vh;

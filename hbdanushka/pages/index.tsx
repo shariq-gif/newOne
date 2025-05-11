@@ -7,7 +7,7 @@
 
 //   useEffect(() => {
 //     const today = new Date()
-//     const birthday = new Date(today.getFullYear(), 4, 15) // May is month 4 (0-indexed)
+//     const birthday = new Date(today.getFullYear(), 4, 15) // May 15
 
 //     if (
 //       today.getDate() === birthday.getDate() &&
@@ -50,8 +50,14 @@
 //   }
 
 //   return (
-//     <div className="h-screen bg-pink-50 flex items-center justify-center text-center px-6">
-//       <h1 className="text-5xl font-bold text-pink-600">🎂 Happy Birthday Anushka! 🎂</h1>
+//     <div className="min-h-screen flex flex-col gap-6 items-center justify-center bg-pink-100 p-6 text-center">
+//       <h1 className="text-4xl font-bold text-red-500">🎂 Happy Birthday Anushka! 🎂</h1>
+//       <button
+//         onClick={() => window.open('/birthday/index.html', '_blank')}
+//         className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-2xl shadow-md transition duration-300 text-lg"
+//       >
+//         🎉 Open Birthday Surprise
+//       </button>
 //     </div>
 //   )
 // }
