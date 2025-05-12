@@ -84,22 +84,28 @@ export default function Home() {
     fetchRandomImage()
   }, [])
 
-  const blocks = [
-    {
-      key: 'header',
-      content: (
-        <>
-          <span className="font-semibold text-xl text-neutral-700">Anushhkaaaaaa &lt;3</span>
-          <nav className="space-x-4 text-sm text-neutral-600">
-            <a href="#" className="text-xl hover:underline">Affection</a>
-            <a href="#" className="text-xl hover:underline">Gallery</a>
-            <a href="#" className="text-xl hover:underline">Letter</a>
-          </nav>
-        </>
-      ),
-      className: 'col-span-full flex justify-between items-center bg-[#fbe4df] p-4 rounded-xl'
-    },
-
+const blocks = [
+  {
+    key: 'header',
+    content: (
+      <>
+        <span className="font-semibold text-xl text-neutral-700">Anushhkaaaaaa &lt;3</span>
+        <nav className="space-x-4 text-sm text-neutral-600 flex flex-wrap justify-between sm:space-x-8 sm:flex-row flex-col mt-4 sm:mt-0">
+          <Link href="/grid/affection" className="text-xl hover:underline mb-2 sm:mb-0">
+            Affection
+          </Link>
+          <Link href="/grid/gallery" className="text-xl hover:underline mb-2 sm:mb-0">
+            Gallery
+          </Link>
+          <Link href="/birthday/index.html" className="text-xl hover:underline mb-2 sm:mb-0">
+            Birthday Wish
+          </Link>
+          <a href="#" className="text-xl hover:underline mb-2 sm:mb-0">Letter</a>
+        </nav>
+      </>
+    ),
+    className: 'col-span-full flex justify-between items-center bg-[#fbe4df] p-4 rounded-xl'
+  },
     {
       key: 'hero',
       content: (
