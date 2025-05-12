@@ -31,14 +31,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Return a success response
     return res.status(200).json({ ok: true })
-  } catch (err) {
+  } catch (err: unknown) {
+    // Type assertion to cast `err` as an `Error`
+    const error = err as Error;
+
     // Log detailed error information
-    console.error("Error while creating Notion page:", err)
+    console.error("Error while creating Notion page:", error);
 
     // Return a 500 error with more information
     return res.status(500).json({
       error: "Failed to send affection",
-      message: err.message || err,
-    })
+      message: error.message || "Unknown error occurred",  // Default message if `message` is not available
+    });
   }
 }
