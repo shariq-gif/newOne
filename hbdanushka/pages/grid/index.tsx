@@ -163,7 +163,7 @@ const blocks = [
         <>
           <h2 className="font-semibold">My Muse 👀</h2>
           <Image
-            src="https://source.unsplash.com/400x250/?interior,art"
+            src="https://res.cloudinary.com/dpyztrysb/image/upload/v1747224777/Snapchat-969126419_w0ifxd_exported_4369_3_qezalf.jpg"
             alt="Museo"
             width={400}
             height={250}
@@ -171,7 +171,7 @@ const blocks = [
           />
           <span className="mt-2 text-sm text-neutral-600">Her Eyes are the Prettiest Little Thing i have ever Seen</span>
           <span className="text-sm text-neutral-600">I wish I Could look at her like eyes, the way she is just so so perfect</span>
-          <span>Teasing Anushka,
+          <span>[ Removed this block cause hehe you pissed me off for that eye image] <br/>
 Yours avidly,
 Shariq
 </span>
@@ -184,10 +184,17 @@ Shariq
       key: 'about',
       content: (
         <p>
-          Anushka is a girl who has lived her life in Karnal, She is smart, intelligent, funny, and
-          Lives Out a pretty normal Life. She hates people, and she dont trust them easily, she gets
-          blanked a lot(cute), Also She chose me so there's something clearly wrong with her.
-        </p>
+  Anushka's from Karnal—but don't let “small town” fool you. She's sharp, effortlessly funny, and impossible to pin down.
+She keeps her circle tight, trust tighter, and still somehow let me in (questionable judgment, honestly).
+She zones out a lot—it's cute. But when she's locked in? She's unstoppable.
+There's a quiet intensity to her, like she's always carrying a secret storm.
+
+And still… she's mine.
+
+Happy Birthday, Pookie.
+You're weird, wonderful, and absolutely one of a kind.
+</p>
+     
       ),
       className: 'bg-[#fbe4df] p-4 rounded-xl text-sm leading-relaxed text-neutral-600'
     },
@@ -208,8 +215,14 @@ Shariq
       key: 'footer',
       content: (
         <>
-          <span>INSTAGRAM</span>
-          <span>TWITTER</span>
+          <a
+  href="https://instagram.com/alter_anushkaa"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <span>INSTAGRAM</span>
+</a>
+
         </>
       ),
       className: 'col-span-full bg-[#fbe4df] p-4 rounded-xl flex justify-between text-sm text-neutral-600'

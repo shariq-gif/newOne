@@ -56,7 +56,7 @@ export default function Home() {
   onClick={() => (window.location.href = '/birthday/index.html')}
   className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-2xl shadow-md transition duration-300 text-lg"
 >
-  🎉 Open Birthday Surprise
+  🎉 Open Birthday Surprise (Use a Laptop)
 </button>
 
     </div>

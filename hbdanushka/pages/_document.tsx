@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <script defer data-domain="hbdanushka.vercel.app" src="https://plausible.io/js/script.js"></script>
+        
         </Head> 
       <body className="antialiased">
         <Main />
