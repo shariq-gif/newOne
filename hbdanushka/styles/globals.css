@@ -55,3 +55,29 @@ body {
   opacity: 1;
   transform: scale(1);
 }
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.glow {
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.8), 0 0 30px rgba(255, 105, 180, 0.6);
+}

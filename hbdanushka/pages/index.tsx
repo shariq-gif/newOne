@@ -48,19 +48,39 @@ export default function Home() {
       </div>
     )
   }
+useEffect(() => {
+    // Simple confetti animation
+    import('canvas-confetti').then((confetti) => {
+      confetti.default({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+    });
+  }, []);
 
   return (
-    <div className="min-h-screen flex flex-col gap-6 items-center justify-center bg-pink-100 p-6 text-center">
-      <h1 className="text-4xl font-bold text-red-500">🎂 Happy Birthday Anushka! 🎂</h1>
-     <button
-  onClick={() => (window.location.href = '/birthday/index.html')}
-  className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-2xl shadow-md transition duration-300 text-lg"
->
-  🎉 Open Birthday Surprise (Use a Laptop)
-</button>
+    <div className="min-h-screen relative flex flex-col gap-6 items-center justify-center bg-gradient-to-b from-pink-100 to-pink-200 p-6 text-center overflow-hidden">
+      
+      {/* Floating Balloons (Decorative) */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+        <div className="animate-float absolute left-[10%] top-[-50px] text-5xl">🎈</div>
+        <div className="animate-float animation-delay-1000 absolute left-[50%] top-[-70px] text-6xl">🎈</div>
+        <div className="animate-float animation-delay-2000 absolute left-[80%] top-[-60px] text-4xl">🎈</div>
+      </div>
 
+      <h1 className="text-4xl md:text-5xl font-bold text-red-500 animate-pulse drop-shadow-lg">
+        🎂 Happy Birthday Anushka! 🎂
+      </h1>
+
+      <button
+        onClick={() => (window.location.href = '/birthday/index.html')}
+        className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-2xl shadow-xl transition duration-300 text-lg border-4 border-pink-200 hover:border-white glow"
+      >
+        🎉 Open Birthday Surprise (Use a Laptop)
+      </button>
     </div>
-  )
+  );
 }
 
 // export default function Home() {
