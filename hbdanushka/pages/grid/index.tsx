@@ -100,7 +100,7 @@ const blocks = [
           <Link href="/birthday/index.html" className="text-xl hover:underline mb-2 sm:mb-0">
             Birthday Wish
           </Link>
-          <a href="#" className="text-xl hover:underline mb-2 sm:mb-0">Letter</a>
+          <a href="/letter" className="text-xl hover:underline mb-2 sm:mb-0">Letter</a>
         </nav>
       </>
     ),
@@ -172,13 +172,8 @@ const blocks = [
           <span className="mt-2 text-sm text-neutral-600">Her Eyes are the Prettiest Little Thing i have ever Seen</span>
           <span className="text-sm text-neutral-600">I wish I Could look at her like eyes, the way she is just so so perfect</span>
           <span>Teasing Anushka,
-
-You are the beauty of autumn. I am so happy to wake up to your little voice, your little eyes, and dearest face. I crown you the Queen of my heart. My romantic hunger patiently craves your loveliness. You are my sensual adoration. My infatuation lusts for your tenderness. Your dearest thighs is my edgy ambition. Your love makes my world go round. You are my romantic adoration: A charming rapture.
-
 Yours avidly,
-
 Shariq
-
 </span>
         </>
       ),
