@@ -48,26 +48,13 @@ export default function Home() {
       </div>
     )
   }
-useEffect(() => {
-    // Simple confetti animation
-    import('canvas-confetti').then((confetti) => {
-      confetti.default({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-      });
-    });
-  }, []);
+
 
   return (
     <div className="min-h-screen relative flex flex-col gap-6 items-center justify-center bg-gradient-to-b from-pink-100 to-pink-200 p-6 text-center overflow-hidden">
       
       {/* Floating Balloons (Decorative) */}
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
-        <div className="animate-float absolute left-[10%] top-[-50px] text-5xl">🎈</div>
-        <div className="animate-float animation-delay-1000 absolute left-[50%] top-[-70px] text-6xl">🎈</div>
-        <div className="animate-float animation-delay-2000 absolute left-[80%] top-[-60px] text-4xl">🎈</div>
-      </div>
+      
 
       <h1 className="text-4xl md:text-5xl font-bold text-red-500 animate-pulse drop-shadow-lg">
         🎂 Happy Birthday Anushka! 🎂
