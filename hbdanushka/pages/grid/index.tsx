@@ -184,7 +184,7 @@ Shariq
       key: 'about',
       content: (
         <p>
-  Anushka's from Karnal—but don't let “small town” fool you. She's sharp, effortlessly funny, and impossible to pin down.
+She's sharp, effortlessly funny, and impossible to pin down.
 She keeps her circle tight, trust tighter, and still somehow let me in (questionable judgment, honestly).
 She zones out a lot—it's cute. But when she's locked in? She's unstoppable.
 There's a quiet intensity to her, like she's always carrying a secret storm.
